@@ -1,0 +1,62 @@
+Section 1 — Equal Population
+
+Members of the House of Representatives are elected from single-member districts composed of contiguous territory and containing, as nearly as practicable, an equal number of inhabitants.
+
+Section 2 — Required Geometric Form
+
+Each congressional district must be a single, contiguous, simply connected geographic area and must satisfy all of the following requirements:
+
+No Holes
+A district may not wholly surround or enclose any area not included within the district.
+
+Maximum Number of Sides
+A district may not have more than five sides, as defined in Section 3.
+
+Externally Fixed Boundaries
+Any contiguous portion of a district boundary that coincides with:
+
+a state boundary,
+
+an international boundary, or
+
+a permanent body of water,
+counts as one side, regardless of curvature or irregularity.
+
+Side Length Ratio
+The length of the longest side of a district may not exceed two times the length of the shortest side.
+
+Section 3 — Definition of a Side
+
+For purposes of this Article:
+
+A side is a maximal straight boundary segment forming part of the outer boundary of a district.
+
+Consecutive boundary segments are considered part of the same side unless the direction of the boundary changes by more than a minimal angular threshold established by law for geometric measurement.
+
+Boundary segments that do not coincide with an externally fixed boundary and that fail to meet a minimum measurable length established by law are not treated as sides and are merged with adjacent sides for all purposes of this Article.
+
+Section 4 — Contiguity
+
+District territory must be contiguous by land or by permanent infrastructure customarily used for transportation.
+
+Territory of a State separated solely by water and lying within the territorial jurisdiction of that State may be included within a district notwithstanding the absence of a land connection or permanent infrastructure, provided that such inclusion is reasonably proximate and is not used to evade the geometric requirements of this Article.
+
+Section 5 — Prohibited Justifications
+
+Compliance with this Article may not be reduced, waived, or avoided on the basis of:
+
+political affiliation or voting history,
+
+incumbency,
+
+partisan advantage, or
+
+administrative convenience.
+
+Section 6 — Enforcement Authority
+
+Congress has power to enforce this Article by appropriate legislation, including the establishment of neutral geometric standards necessary to apply the definitions contained herein, provided that such legislation does not alter the substantive requirements of Sections 1 and 2.
+
+Section 7 — Applicability
+
+This Article applies to all congressional districts used in elections held after its ratification.

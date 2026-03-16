@@ -1,0 +1,37 @@
+Section 1 — Federal Elections (Flexible Ranked-Choice Voting)
+
+Elections for the offices of President, Vice President, and Members of the House of Representatives and Senate are conducted using a ranked-choice method. Voters may indicate preferences among multiple candidates in order.
+
+The method of counting must respect each voter’s expressed preferences and produce a winner or winners reflecting majority or broad support. Any system that misrepresents voter preferences, manipulates rankings, or allocates votes in a manner that undermines majority support is invalid.
+
+Section 2 — State Elections (Optional Adoption)
+
+A State may conduct elections for any office using the same ranked-choice method.
+
+If a State adopts this method, votes and procedures must comply with the principles established in Section 1, ensuring that each voter’s preferences are fully counted and each candidate’s support accurately reflected.
+
+Section 3 — Integrity, State Autonomy, and Legal Consequences
+
+Congress provides by law for transparent reporting, secure tabulation, and independent verification of all votes for elections conducted under this amendment.
+
+Election systems must:
+
+Protect voter intent: all expressed preferences must be accurately recorded, stored, and counted.
+
+Prevent manipulation: no candidate, party, elected official, or federal officer may alter, suppress, seize, or misallocate ballots or rankings.
+
+Protect state administration: each State retains authority to administer elections for offices under this amendment according to its constitution and laws. Federal action may not interfere with lawful state election administration except to ensure compliance with this article.
+
+Preserve chain of custody: all ballots, votes, and records must be handled in a documented, verifiable chain from voter to final tabulation, with secure storage and audit access.
+
+Provide auditability: election results must be verifiable by independent observers and subject to public review.
+
+Ensure continuity: election procedures must include contingency measures to maintain vote integrity during emergencies, disasters, or disruptions.
+
+Legal consequences: intentional violation of any provision of this article, including manipulation, suppression, or seizure of ballots or votes, constitutes a breach of constitutional duty. Congress provides by law for civil and criminal consequences for such violations, including penalties sufficient to deter malicious actors.
+
+Remedial authority: any election conducted under this article that violates these protections is invalid. Persons with standing under Article III may seek judicial relief, and courts are empowered to enforce the invalidation of elections affected by such violations.
+
+Section 4 — Enforcement
+
+This article is self-executing. Any person with standing under Article III may seek judicial relief to enforce its provisions.
