@@ -27,7 +27,7 @@
   --space-xl: 2rem;
   --space-2xl: 3rem;
   --space-3xl: 4rem;
-  --header-height: 64px;
+  --header-height: 84px;
   --max-width: 720px;
   --max-width-wide: 960px;
 }
@@ -104,11 +104,13 @@ a:hover {
   justify-content: space-between;
   max-width: var(--max-width-wide);
   margin: 0 auto;
-  padding: var(--space-md) var(--space-lg);
+  padding: var(--space-sm) var(--space-md);
   min-height: var(--header-height);
 }
 
 .logo {
+  display: flex;
+  align-items: center;
   font-family: var(--font-serif);
   font-weight: 700;
   font-size: 1.2rem;
@@ -118,6 +120,13 @@ a:hover {
 .logo:hover {
   color: var(--text-primary);
   text-decoration: none;
+}
+
+.logo-img {
+  display: block;
+  height: 75px;
+  width: auto;
+  object-fit: contain;
 }
 
 .nav-toggle {
