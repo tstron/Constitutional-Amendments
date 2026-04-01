@@ -1,0 +1,12 @@
+{
+  "name": "restore-representation",
+  "version": "1.0.0",
+  "description": "Restore Representation — constitutional amendment proposals site",
+  "private": true,
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "mongodb": "^6.0.0"
+  }
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Feedback — Restore Representation</title>
+  <link rel="icon" href="images/RR_Logo.png" type="image/png" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo" aria-label="Restore Representation — Home">
+        <img src="images/RR_Logo.png" alt="Restore Representation" class="logo-img" width="75" height="75" />
+      </a>
+      <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="nav" aria-label="Toggle menu">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+      <nav id="nav" class="nav" aria-label="Main">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#amendments">Amendments</a></li>
+          <li><a href="index.html#why-it-matters">Why It Matters</a></li>
+          <li><a href="index.html#how-to-help">How to Help</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <article class="amendment-page feedback-page">
+      <div class="section-inner">
+        <a href="index.html" class="back-link">← Home</a>
+        <h1 class="amendment-page-title">Feedback</h1>
+        <p class="feedback-intro">Share your thoughts on the amendment proposals. Your name and email are only used to respond if needed and are not published.</p>
+
+        <form id="feedback-form" class="feedback-form" novalidate>
+          <div class="form-group">
+            <label for="feedback-name">Name <span class="required">*</span></label>
+            <input type="text" id="feedback-name" name="name" required autocomplete="name" maxlength="200" />
+          </div>
+          <div class="form-group">
+            <label for="feedback-email">Email <span class="required">*</span></label>
+            <input type="email" id="feedback-email" name="email" required autocomplete="email" />
+          </div>
+          <div class="form-group form-group-honeypot" aria-hidden="true">
+            <label for="feedback-website">Website</label>
+            <input type="text" id="feedback-website" name="website" tabindex="-1" autocomplete="off" />
+          </div>
+          <div class="form-group">
+            <label for="feedback-amendment">Topic (optional)</label>
+            <select id="feedback-amendment" name="amendment">
+              <option value="">General feedback</option>
+              <option value="Geometric Districting">Geometric Districting Amendment</option>
+              <option value="Representative Assembly and Apportionment">Representative Assembly and Apportionment Amendment</option>
+              <option value="Ranked-Choice Voting">Ranked-Choice Voting Amendment</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="feedback-message">Message <span class="required">*</span></label>
+            <textarea id="feedback-message" name="message" required rows="6" maxlength="5000"></textarea>
+            <span class="form-hint">Maximum 5,000 characters.</span>
+          </div>
+          <div id="feedback-status" class="feedback-status" role="status" aria-live="polite"></div>
+          <button type="submit" class="btn btn-primary">Send feedback</button>
+        </form>
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>Restore Representation — Version history and advocacy.</p>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+  <script src="js/feedback.js"></script>
+</body>
+</html>

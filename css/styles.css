@@ -702,6 +702,92 @@ a:hover {
   margin-bottom: 0;
 }
 
+/* ===== Feedback form ===== */
+.feedback-intro {
+  color: var(--text-secondary);
+  margin: 0 0 var(--space-2xl);
+  max-width: 48ch;
+}
+
+.feedback-form {
+  max-width: 32rem;
+}
+
+.feedback-form .form-group {
+  margin-bottom: var(--space-lg);
+}
+
+.feedback-form label {
+  display: block;
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin-bottom: var(--space-xs);
+  color: var(--text-primary);
+}
+
+.feedback-form .required {
+  color: var(--accent-red);
+}
+
+.feedback-form input[type="text"],
+.feedback-form input[type="email"],
+.feedback-form select,
+.feedback-form textarea {
+  width: 100%;
+  padding: var(--space-sm) var(--space-md);
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  color: var(--text-primary);
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  transition: border-color 0.2s ease;
+}
+
+.feedback-form input:focus,
+.feedback-form select:focus,
+.feedback-form textarea:focus {
+  outline: none;
+  border-color: var(--accent-blue);
+}
+
+.feedback-form textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.feedback-form .form-hint {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-top: var(--space-xs);
+}
+
+.form-group-honeypot {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.feedback-status {
+  margin-bottom: var(--space-md);
+  font-size: 0.95rem;
+}
+
+.feedback-status-success {
+  color: var(--accent-blue);
+}
+
+.feedback-status-error {
+  color: var(--accent-red);
+}
+
+.feedback-form .btn {
+  margin-top: var(--space-sm);
+}
+
 /* Full-text card on amendment pages */
 .amendment-text-block {
   margin-top: var(--space-xl);
