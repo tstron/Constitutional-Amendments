@@ -38,7 +38,8 @@ The site and the feedback API run on Vercel so the form can POST to `/api/feedba
    - Project → Settings → Environment Variables.
    - Name: **MONGODB_URI**  
    - Value: your full MongoDB Atlas connection string (from step 1).
-   - Add for Production (and Preview if you want). Save.
+   - Under **Environments**, enable **Production** and **Preview** (and **Development** if you use `vercel dev`). Save.
+   - If `MONGODB_URI` is only set for Production, deployments at `*.vercel.app` that run as **Preview** will fail until you add the variable for Preview too, then **Redeploy**.
 4. **Redeploy** so the new env var is used: Deployments → … on latest deployment → Redeploy.
 5. **Custom domain**
    - Project → Settings → Domains.
@@ -72,6 +73,23 @@ If you don’t move the site to Vercel and keep it on GitHub Pages, the form wil
 
 - **Recommended:** Deploy the same repo to Vercel and point **restorerepresentation.org** to Vercel (as in section 2). The site and API are then in one place.
 - **Alternative:** Deploy *only* the API as a separate Vercel project (e.g. put `api/` and `package.json` in a small repo, deploy that to Vercel). Then in the feedback form script, set the API base URL to that Vercel project’s URL (e.g. `https://your-api.vercel.app`) and ensure that project has CORS allowed for `https://restorerepresentation.org`. The repo’s `api/feedback.js` already allows that origin.
+
+---
+
+## Troubleshooting: form shows “Something went wrong”
+
+1. **Vercel env for Preview**
+   - Project → **Settings → Environment Variables** → open **MONGODB_URI**.
+   - Ensure **Preview** is checked (not only Production). **Save** → **Deployments** → ⋯ on latest → **Redeploy**.
+
+2. **Atlas Network Access**
+   - Atlas → **Network Access**: confirm **0.0.0.0/0** (or equivalent) is allowed.
+
+3. **Password in URI**
+   - Special characters in the DB password must be [URL-encoded](https://www.mongodb.com/docs/manual/reference/connection-string/#escape-characters) in `MONGODB_URI`.
+
+4. **Vercel function logs**
+   - Vercel → Project → **Deployments** → open a deployment → **Functions** (or **Logs**). Open `/api/feedback` and look for MongoDB or config errors.
 
 ---
 
