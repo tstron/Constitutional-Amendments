@@ -256,6 +256,14 @@ body.nav-open {
     display: none;
   }
 
+  .header-inner {
+    gap: var(--space-lg);
+  }
+
+  .logo {
+    margin-right: var(--space-md);
+  }
+
   .site-header.is-open {
     position: sticky;
     top: 0;
