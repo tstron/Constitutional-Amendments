@@ -41,6 +41,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -51,6 +52,14 @@ body {
   color: var(--text-primary);
   background-color: var(--bg-primary);
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+@supports (overflow-x: clip) {
+  html,
+  body {
+    overflow-x: clip;
+  }
 }
 
 img {
@@ -173,17 +182,27 @@ a:hover {
   position: fixed;
   top: var(--header-height);
   left: 0;
-  right: 0;
-  bottom: 0;
+  height: calc(100dvh - var(--header-height));
+  width: 100%;
+  max-width: 100%;
   background: var(--bg-primary);
-  padding: var(--space-xl);
+  padding: var(--space-lg);
   transform: translateX(100%);
   transition: transform 0.25s ease;
   overflow-y: auto;
+  visibility: hidden;
+  pointer-events: none;
 }
 
 .site-header.is-open .nav {
   transform: translateX(0);
+  visibility: visible;
+  pointer-events: auto;
+}
+
+/* Prevent scroll bleed when mobile menu is open */
+body.nav-open {
+  overflow: hidden;
 }
 
 .nav-list {
@@ -661,6 +680,45 @@ a:hover {
 }
 
 .explainer p:last-child {
+  margin-bottom: 0;
+}
+
+/* Ranked-choice page: external resources */
+.rc-resource-section {
+  margin-bottom: var(--space-3xl);
+  padding-bottom: var(--space-2xl);
+  border-bottom: 1px solid var(--border);
+}
+
+.rc-resource-heading {
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin: 0 0 var(--space-sm);
+  color: var(--text-primary);
+}
+
+.rc-resource-intro {
+  margin: 0 0 var(--space-md);
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.55;
+  max-width: 58ch;
+}
+
+.rc-resource-list {
+  margin: 0;
+  padding-left: 1.25rem;
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.55;
+}
+
+.rc-resource-list li {
+  margin-bottom: var(--space-sm);
+}
+
+.rc-resource-list li:last-child {
   margin-bottom: 0;
 }
 

@@ -1,6 +1,28 @@
 (function () {
   "use strict";
 
+  // Mobile nav toggle (used on every page)
+  var header = document.querySelector(".site-header");
+  var navToggle = document.querySelector(".nav-toggle");
+  var nav = document.querySelector("#nav");
+
+  if (header && navToggle && nav) {
+    navToggle.addEventListener("click", function () {
+      var isOpen = header.classList.toggle("is-open");
+      navToggle.setAttribute("aria-expanded", isOpen);
+      document.body.classList.toggle("nav-open", isOpen);
+    });
+
+    document.querySelectorAll(".nav-list a").forEach(function (link) {
+      link.addEventListener("click", function () {
+        header.classList.remove("is-open");
+        navToggle.setAttribute("aria-expanded", "false");
+        document.body.classList.remove("nav-open");
+      });
+    });
+  }
+
+  // Amendment rendering (only on pages that provide data)
   var AMENDMENTS_DATA = window.AMENDMENTS_DATA;
   if (!AMENDMENTS_DATA || !AMENDMENTS_DATA.length) return;
 
@@ -252,25 +274,6 @@
   } else if (listContainer) {
     AMENDMENTS_DATA.forEach(function (amendment) {
       listContainer.appendChild(renderAmendment(amendment));
-    });
-  }
-
-  // Mobile nav toggle
-  var header = document.querySelector(".site-header");
-  var navToggle = document.querySelector(".nav-toggle");
-  var nav = document.querySelector("#nav");
-
-  if (navToggle && nav) {
-    navToggle.addEventListener("click", function () {
-      var isOpen = header.classList.toggle("is-open");
-      navToggle.setAttribute("aria-expanded", isOpen);
-    });
-
-    document.querySelectorAll(".nav-list a").forEach(function (link) {
-      link.addEventListener("click", function () {
-        header.classList.remove("is-open");
-        navToggle.setAttribute("aria-expanded", "false");
-      });
     });
   }
 })();
