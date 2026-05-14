@@ -41,6 +41,24 @@ window.AMENDMENTS_DATA = [
     ]
   },
   {
+    id: "term-limits",
+    title: "Congressional Term Limits Amendment",
+    slug: "CongressionalTermLimitsAmendment",
+    versions: [
+      {
+        id: "v1",
+        label: "Version 1",
+        date: null,
+        content: [
+          { title: "Section 1 — House of Representatives Service Limits", body: "No person shall serve in the House of Representatives for more than nine (9) consecutive terms. A term shall be as defined by this Constitution.\n\nUpon completion of nine consecutive terms, a person shall be ineligible to serve in the House of Representatives for a period of twelve (12) years, during which time they may not be appointed, elected, or otherwise selected to serve in the House.\n\nDuring such twelve-year period, the individual shall also be ineligible to serve in the Senate of the United States.\n\nUpon completion of the twelve-year period, eligibility for service in the House shall be restored, subject to the limits of this Article." },
+          { title: "Section 2 — Senate Service Limits (Standard Path)", body: "No person shall serve in the Senate for more than three (3) consecutive terms.\n\nUpon completion of three consecutive terms, a person shall be ineligible to serve in the Senate for a period of twelve (12) years, during which time they may not be appointed, elected, or otherwise selected to serve in the Senate.\n\nDuring such twelve-year period, the individual shall also be ineligible to serve in the House of Representatives.\n\nUpon completion of the twelve-year period, eligibility for service in the Senate shall be restored, subject to the limits of this Article." },
+          { title: "Section 3 — Senate Final Tenure Option", body: "Notwithstanding Section 2, a person elected to serve a fourth consecutive term in the Senate shall be deemed to have entered final tenure status.\n\nA Senator serving under final tenure status shall complete that term of service but shall thereafter be permanently ineligible to serve in the Senate of the United States, whether by election, appointment, or otherwise.\n\nSuch final tenure status shall be irrevocable upon commencement of the fourth consecutive term." },
+          { title: "Section 4 — Definitions and Enforcement", body: "Congress shall have power to enforce this article by appropriate legislation, provided that no such legislation shall diminish the term limits, eligibility restrictions, or structural prohibitions established herein." }
+        ]
+      }
+    ]
+  },
+  {
     id: "geometric-districting",
     title: "Geometric Districting Amendment",
     slug: "GeometricDistrictingAmendment",
